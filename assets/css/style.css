@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+/* utility class */
+.center{
+    width: 70%;
+    margin: auto;
+}
+.d_flex {
+    display: flex;
+}
+.space_between {
+    justify-content: space-between;
+}
+.self_center {
+    align-self: center;
+}
+/* utility class */
+
+/* nav */
+.barrettaNera {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(29, 28, 28);
+}
+.annuncio p {
+    color: white;
+    line-height: 30px;
+    font-size: 13px;
+}
+.heroIMG {
+    background-image: url(../img/homepage-hero-background.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+}
+.containerTrasparente{
+    background-color: black;
+    opacity: 0.7;
+    height: 100px;
+}
+.logo {
+    height: 40px;
+    margin-top: 25px;
+}
+.navList > a {
+    padding: 0 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 100px;
+    vertical-align: middle;
+}
+.containerTrasparente input {
+    height: 50px;
+    padding-top: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 25px;
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(6, 167, 41);
+}
+.containerTrasparente input:hover {
+    cursor: pointer;
+}
+.titoloPagina {
+    color: white;
+    position: relative;
+    top: 150px;
+}
+.titoloPagina h1{
+    font-size: 58px;
+}
+.titoloPagina p{
+    font-size: 25px;
+}
+/* nav */
