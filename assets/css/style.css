@@ -15,6 +15,10 @@ a {
 .d_flex {
     display: flex;
 }
+.d_flex_column{
+    display: flex;
+    flex-direction: column;
+}
 .space_between {
     justify-content: space-between;
 }
@@ -75,10 +79,56 @@ a {
     position: relative;
     top: 150px;
 }
-.titoloPagina h1{
+.titoloPagina h1 {
     font-size: 58px;
 }
-.titoloPagina p{
+.titoloPagina p {
     font-size: 25px;
 }
 /* nav */
+
+/* main 1 */
+.main_1 {
+    position: relative;
+}
+.text_main_1 {
+    margin-top: 50px;
+    max-width: 50%;
+}
+.text_main_1 > h2,.text_main_1 > h4,.text_main_1 > p{
+    margin-top: 15px;
+    color: grey;
+}
+.text_main_1 > h2{
+    color: black;
+}
+.text_main_1 > h4 {
+    line-height: 30px;
+}
+.text_main_1 > p {
+    line-height: 27px;
+}
+.areaForm {
+    margin: auto;
+    width: 40%;
+    background-color: white;
+    position: absolute;
+    top: -30px;
+    right: 0;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 20px;
+}
+.areaForm h3{
+    color: rgb(6, 167, 41);
+}
+.areaForm h3, .areaForm p{
+   text-align: center;
+   padding-top: 10px;
+}
+
+.areaForm input {
+    margin: 15px;
+    padding: 5px;
+}
+/* main 1 */
