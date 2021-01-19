@@ -126,9 +126,16 @@ a {
    text-align: center;
    padding-top: 10px;
 }
-
 .areaForm input {
     margin: 15px;
     padding: 5px;
+}
+#btn_form {
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(6, 167, 41);
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
 }
 /* main 1 */
