@@ -54,12 +54,17 @@ a {
     margin-top: 25px;
 }
 .navList > a {
-    padding: 0 20px;
+    padding: 0 15px;
     color: white;
     font-weight: 500;
     font-size: 13px;
     line-height: 100px;
     vertical-align: middle;
+}
+.navList > a:hover {
+    color: rgb(6, 167, 41);
+    text-decoration: underline;
+
 }
 .containerTrasparente input {
     height: 50px;
@@ -173,3 +178,42 @@ a {
     margin-top: 50px;
 }
 /* main 2 */
+
+/* main 3 */
+.heroimg_main_3{
+    background-image: url(../img/blog-choosecar-700x441.jpg);
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    opacity: 0.2;
+    background-position: bottom;
+}
+.main_3{
+    position: relative;
+}
+.main_3 img {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 400px;
+    color: #cbcccd;
+
+    transform: scaleY(-1); 
+    -webkit-transform: scaleY(-1); 
+    -moz-transform: scaleY(-1); 
+    -ms-transform: scaleY(-1); 
+    -o-transform: scaleY(-1); 
+    filter: flipv; 
+    opacity: 0.2;
+}
+.container_main_3{
+    position: relative;
+}
+.card_info {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: absolute;
+    top: 0;
+}
+/* main 3 */
