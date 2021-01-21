@@ -248,7 +248,7 @@
                                     <img class="active" :src="img[counter]" alt="">
                                 </div>
                                 <p class="center"> Avada Driving School really helped build my confidence behind the wheel and with driving in general, and they got me a first time pass! Higly recommended.</p>
-                                <h6> Sophia Jones </h6>
+                                <h6> {{name[counter]}} </h6>
                                 <ul>
                                     <i class="fas fa-circle" :class="(i === counter) ? 'active': '' " v-for="(img, i) in img" @click="circleClick(i)"> </i>
                                 </ul>

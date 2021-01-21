@@ -53,7 +53,12 @@ let app = new Vue({
             "assets/img/testimonial-2.png",
             "assets/img/testimonial-3.png",
             "assets/img/testimonial-4.png",
-
+        ],
+        name: [
+            "Sophia",
+            "Nicco",
+            "Diego",
+            "Mia"
         ]
     },
     created: function () {
