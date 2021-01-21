@@ -391,16 +391,20 @@ a {
 .main_4 .cardPlus img{
     max-width: 310px;
 }
-.card > .icons > a > i, .cardPlus > .icons > a > i {
+.card > .icons > a > i,.cardPlus > .icons > a > i {
     font-size: 1.2em;
     margin: 20px;
     color: lightgray;
+}
+.cardPlus > .icons > a > i {
+    margin-top: 25px;
 }
 .card > .icons > a > i:hover, .cardPlus > .icons > a > i:hover {
     color: blue;
 }
 .main_4 .card p, .main_4 .cardPlus p {
     line-height: 2em;
+    margin: 0 10px;
 }
 .cards_main_4 h4 {
     font-size: 25px;
@@ -588,3 +592,40 @@ a {
     color: green;
 }
 /* footer */
+
+/* fixed */
+.elemento_fixed {
+    width: 70px;
+    height: 150px;
+    position: fixed;
+    right: 2%;
+    top: 25%;
+    z-index: 999;
+}
+.sfondo_fixed {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+}
+.sfondo_fixed:hover {
+    cursor: pointer;
+}
+.sfondo_fixed i {
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 0;
+    color: blue;
+}
+.sfondo_fixed > span {
+    color: green;
+    font-size: 0.8em;
+}
+.sfondo_fixed div {
+    color: green;
+    font-size: 1.5em;
+}
+.sfondo_fixed p {
+    text-align: center;
+}

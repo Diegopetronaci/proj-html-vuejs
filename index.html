@@ -12,6 +12,21 @@
     <body>
         
         <div id="app">
+
+            <div class="elemento_fixed d_flex_column space_between" @click="mandaAiVideos()">      
+                <div class="sfondo_fixed d_flex_column">
+                    <i class="fas fa-folder-open"></i>
+                    <p>Demos</p>
+                </div>
+                <div class="sfondo_fixed d_flex_column" @click="shopOffer()">
+                    <div class="d_flex">
+                        <span>$</span>
+                        <div>39</div>
+                    </div>
+                    <p>On Sale</p>
+                </div>  
+            </div>
+
             <!-- <nav>
                 <div class="barrettaNera">
                     <div class="center d_flex space_between">
@@ -265,7 +280,6 @@
                         </div>
                     </div>
                 </div>
-
             </main>
             
             <footer>
@@ -278,7 +292,7 @@
                             </div>
                             <div class="colonna d_flex_column">
                                 <h4>CONTACT DETAILS</h4>
-                                <div class="d_flex">
+                                <!-- <div class="d_flex">
                                     <i class="fas fa-home"></i>
                                     <p>12345 North Main Street. New york, NY 555555</p>
                                 </div>
@@ -293,11 +307,15 @@
                                 <div class="d_flex">
                                     <i class="fas fa-link"></i>
                                     <p>Theme-Fusion.com</p>
+                                </div> -->
+                                <div class="d_flex" v-for="info in infoFooter">
+                                    <i :class=info.icona></i>
+                                    <p> {{info.text}} </p>
                                 </div>
                             </div>
                             <div class="colonna d_flex_column">
                                 <h4>COURSES</h4>
-                                <div class="d_flex">
+                                <!-- <div class="d_flex">
                                     <i class="far fa-arrow-alt-circle-right"></i>
                                     <p><a> Pass Plus </a></p>
                                 </div>
@@ -312,6 +330,10 @@
                                 <div class="d_flex">
                                     <i class="far fa-arrow-alt-circle-right"></i>
                                     <p><a> Instructor Training </a></p>
+                                </div> -->
+                                <div class="d_flex" v-for="elemento in elementFooter">
+                                    <i :class= elemento.icona ></i>
+                                    <p><a> {{elemento.text}} </a></p>
                                 </div>
                             </div>
                             <div class="colonna d_flex_column">
