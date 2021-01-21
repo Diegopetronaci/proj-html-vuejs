@@ -220,7 +220,7 @@
                 </div>
                 
                 <div class="main_5">
-                    <div class="container_main_5">
+                    <!-- <div class="container_main_5">
                         <div class="img_main_5">
                             <div class="info center">
                                 <h3>Testimonials</h3>
@@ -237,7 +237,42 @@
                                 </ul>
                             </div>
                         </div>
+                    </div> -->
+
+                    <div class="container_main_5">
+                        <div class="img_main_5">
+                            <div class="info center">
+                                <h3>Testimonials</h3>
+                                <h5>Here's what our happy drivers had to say about our services:</h5>
+                                <div class="images">
+                                    <img class="active" :src="img[counter]" alt="">
+                                </div>
+                                <p class="center"> Avada Driving School really helped build my confidence behind the wheel and with driving in general, and they got me a first time pass! Higly recommended.</p>
+                                <h6>Sophia Jones</h6>
+                                <ul>
+                                    <i class="fas fa-circle" :class="(i === counter) ? 'active': '' " v-for="(img, i) in img" @click="circleClick(i)"> </i>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- <div class="container">
+                        <div class="slider-wrapper">
+                            <div class="prev" @click="prevImg">
+                                <i class="fas fa-angle-left"></i>
+                            </div>
+                            <div class="images">
+                                <img class="active" :src="img[counter]" alt="">
+                            </div>
+                            <div class="next" @click="nextImg">
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                            <div class="nav">
+                                <i class="fas fa-circle" :class="(i === counter) ? 'active': '' " v-for="(img, i) in img"
+                                @click="circleClick(i)"> </i>
+                            </div>
+                        </div>
+                    </div> -->
                 </div>
 
                 <div class="main_6">

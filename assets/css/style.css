@@ -452,6 +452,12 @@ a {
 .img_main_5 > .info{
     line-height: 25px;
 }
+.info > ul > i{
+    padding: 15px;
+}
+.active {
+    color: blue;
+}
 .info > ul > i:hover {
     cursor: pointer;
 }

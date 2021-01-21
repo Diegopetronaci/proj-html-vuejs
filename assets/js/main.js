@@ -46,7 +46,18 @@ let app = new Vue({
                 icona: "far fa-arrow-alt-circle-right",
                 text: "Instructor Training"
             },
+        ],
+        counter: 0,
+        img: [
+            "assets/img/testimonial-1.png",
+            "assets/img/testimonial-2.png",
+            "assets/img/testimonial-3.png",
+            "assets/img/testimonial-4.png",
+
         ]
+    },
+    created: function () {
+        setInterval(this.nextImg, 3000)
     },
     methods: {
         shopOffer(){
@@ -54,6 +65,33 @@ let app = new Vue({
         },
         mandaAiVideos(){
             alert("Al momento non è ancora presente una pagina Video, riprova quando sarò un programmatore migliore!!")
+        },
+        nextImg() {
+            this.counter++;
+            if (this.counter == this.img.length) {
+                this.counter = 0;
+            }
+            console.log(this.counter);
+        },
+        prevImg() {
+            if (this.counter === 0) {
+                this.counter = (this.img.length - 1);
+            } else {
+                this.counter--;
+            }
+            console.log(this.counter);
+        },
+        circleClick(i) {
+            this.counter = i;
         }
+    },
+    mounted() {
+        document.addEventListener("keyup", e => {
+            if (e.key === "ArrowRight") {
+                this.nextImg();
+            } else if (e.key === "ArrowLeft") {
+                this.prevImg();
+            }
+        })
     }
 })
