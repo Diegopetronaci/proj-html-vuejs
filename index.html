@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <title>test finale js</title>
     </head>
     <body>
@@ -47,7 +49,7 @@
                             <div class="center d_flex space_between">
                                 <img class="logo" src="assets/img/avada-drivers-logo-1x.png" alt="">
                                 <ul class="navList d_flex" v-for="link in linksNav">
-                                    <a href=""> {{link}} </a>
+                                    <a href=""> {{link}} <span v-html=""></span> </a>
                                 </ul>
                                 <input type="button" value="BOOK NOW">
                             </div>
@@ -101,6 +103,9 @@
                             <img src="assets/img/triangle.png" alt="">
                         </div>
                         <div class="card_info">
+                            <div class="new_info">
+                                <p>New</p>
+                            </div>
                             <h3>Courses</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas at ex dolorum, nostrum maxime eos ipsam. </p>
                             <input type="button" value="COURSE INFORMATION">
@@ -129,13 +134,28 @@
                         <div class="center d_flex">
                             <div class="cards_bottom d_flex">
                                 <div class="card_main_3">
-                                   <!-- da fare successivamente con vue --> 
+                                   <!-- da fare successivamente con vue -->
+                                    <div class="cerchio_rateo">
+                                        <i class="fas fa-circle-notch"></i>
+                                        <h2>95%</h2>
+                                    </div>
+                                    <p>PASS RATE</p>
                                 </div>
                                 <div class="card_main_3">
                                     <!-- da fare successivamente con vue -->
+                                    <div class="cerchio_rateo">
+                                        <i class="far fa-circle"></i>
+                                        <h2>100%</h2>
+                                    </div>
+                                    <p>REFFERAEL RATE</p>
                                 </div>
                                 <div class="card_main_3">
                                     <!-- da fare successivamente con vue -->
+                                    <div class="cerchio_rateo_diverso">
+                                        <i class="far fa-circle"></i>
+                                        <h2>0%</h2>
+                                    </div>
+                                    <p>ACCIDENT RATE</p>
                                 </div>
                             </div>
                         </div>
@@ -251,14 +271,64 @@
             <footer>
                 <div class="footer_1">
                     <div class="img_footer">
-                        <div class="containers_footer_1 d_flex center">
-                            <div class="colonna_1 d_flex_column">
+                        <div class="containers_footer_1 d_flex center space_between">
+                            <div class="colonna d_flex_column">
                                 <img src="assets/img/avada-drivers-logo-1x.png" alt="">
                                 <p>Avada Driving School is the right choice for exeperienced drivers looking for a refrescher course, of the brand new driver wanting to pass first time.</p>
                             </div>
-                            <div class="d_flex_column"></div>
-                            <div class="d_flex_column"></div>
-                            <div class="d_flex_column"></div>
+                            <div class="colonna d_flex_column">
+                                <h4>CONTACT DETAILS</h4>
+                                <div class="d_flex">
+                                    <i class="fas fa-home"></i>
+                                    <p>12345 North Main Street. New york, NY 555555</p>
+                                </div>
+                                <div class="d_flex">
+                                    <i class="fas fa-phone"></i>
+                                    <p>1.800.555.6789</p>
+                                </div>
+                                <div class="d_flex">
+                                    <i class="far fa-envelope"></i>
+                                    <p>info@your-domain.com</p>
+                                </div>
+                                <div class="d_flex">
+                                    <i class="fas fa-link"></i>
+                                    <p>Theme-Fusion.com</p>
+                                </div>
+                            </div>
+                            <div class="colonna d_flex_column">
+                                <h4>COURSES</h4>
+                                <div class="d_flex">
+                                    <i class="far fa-arrow-alt-circle-right"></i>
+                                    <p><a> Pass Plus </a></p>
+                                </div>
+                                <div class="d_flex">
+                                    <i class="far fa-arrow-alt-circle-right"></i>
+                                    <p><a> Intensive Course </a></p>
+                                </div>
+                                <div class="d_flex">
+                                    <i class="far fa-arrow-alt-circle-right"></i>
+                                    <p><a> Automatic </a></p>
+                                </div>
+                                <div class="d_flex">
+                                    <i class="far fa-arrow-alt-circle-right"></i>
+                                    <p><a> Instructor Training </a></p>
+                                </div>
+                            </div>
+                            <div class="colonna d_flex_column">
+                                <img src="assets/img/footer-ad-grid.png" alt="">
+                                <button>BOOK NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer_2">
+                    <div class="d_flex center space_between">
+                        <p>&copy; Copyright 2012- 2020 | Avada Theme by <span>ThemeFusion</span>| All Rights Reserved | Powered by <span>WordPress</span></p>
+                        <div class="icons_social">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
